@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ecfio is a framework of utilities, documentation, and modules that make hobbyist hardware development easier, faster, and generally more fun.">
+    <meta name="author" content="Wraithan">
+
+    <title>ecfio</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="/css/base.css" rel="stylesheet"></link>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">ecfio</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>ecfio <small>\ EK-fee-oh \</small></h1>
+        <p>A framework of utilities, documentation, and modules that make hobbyist hardware development easier, faster, and generally more fun.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Description</h2>
+          <p>Currently, the environment for hobbyist electronics is hostile. There is plenty of open source hardware, but the tooling is pretty exclusive to random GUI tools, copy and paste code, half translated data sheets, and scattered blog posts. The community deserves better. Modern development practices and good documentation is really what is needed, that is what ecfio will provide.</p>
+
+          <p>The first aim will be clean up the build systems. The plan is to leverage <a href="https://github.com/substack/dotc">dotc</a> and <a href="http://inotool.org">ino</a> as a starting point. Once there are 2-3 projects using this system, the most common commands will be documented. The result of this should be a couple one liners for building projects, pushing them to boards, and perhaps things like running test suites.</p>
+
+          <p>Next, will be moving a few of the core modules from the arduino IDE into dotc modules so they are tracked in their own repos and able to be updated outside of updating the IDE. This will be a test of the dotc system and whether this is truly feasible. Along with the moves into their own modules, this will be the start of documenting exisiting modules.</p>
+        </div>
+        <div class="bs-callout bs-callout-info">
+          <h4>Notes</h4>
+          <p>Not all of the utilities will be written by, or even owned by, the ecfio project. In fact it is almost better that they aren't. The goal of this will be to document the interoperability, build a base ecosystem of modules, build any glue tools needed, and promote it all.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p><a href="https://github.com/wraithan/ecfio-site">Source</a> on github. Content on this site is in the public domain, code is licensed under <a href="http://wraithan.mit-license.org/">MIT</a></p> 
+      </footer>
+    </div>
+  </body>
+</html>
