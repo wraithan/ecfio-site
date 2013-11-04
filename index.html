@@ -37,18 +37,34 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h2>Description</h2>
-          <p>Currently, the environment for hobbyist electronics is hostile. There is plenty of open source hardware, but the tooling is pretty exclusive to random GUI tools, copy and paste code, half translated data sheets, and scattered blog posts. The community deserves better. Modern development practices and good documentation is really what is needed, that is what ecfio will provide.</p>
-
-          <p>The first aim will be clean up the build systems. The plan is to leverage <a href="https://github.com/substack/dotc">dotc</a> and <a href="http://inotool.org">ino</a> as a starting point. Once there are 2-3 projects using this system, the most common commands will be documented. The result of this should be a couple one liners for building projects, pushing them to boards, and perhaps things like running test suites.</p>
-
-          <p>Next, will be moving a few of the core modules from the arduino IDE into dotc modules so they are tracked in their own repos and able to be updated outside of updating the IDE. This will be a test of the dotc system and whether this is truly feasible. Along with the moves into their own modules, this will be the start of documenting exisiting modules.</p>
-        </div>
-        <div class="bs-callout bs-callout-info">
-          <h4>Notes</h4>
-          <p>Not all of the utilities will be written by, or even owned by, the ecfio project. In fact it is almost better that they aren't. The goal of this will be to document the interoperability, build a base ecosystem of modules, build any glue tools needed, and promote it all.</p>
+          <p class="bs-callout bs-callout-info">This is a work in progress, the first iteration of the ecfio commandline tool is not yet available.</p>
         </div>
       </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <h2>Description</h2>
+          <h3>Background</h3>
+          <p>Software development for hobbyist hardware has not evolved nearly as much as the hardware itself has in the last few years. Arduino IDE makes it easy for people on any platform to get started with very basic applications, but once you start doing more complex things you are limited to what is already there, or if you feel bold, going through the complex process needed to install headers, code, and libraries on top of the Arduino IDE's files.</p>
+
+          <h3>Improving the situation</h3>
+          <p>The first aim will be clean up the build systems. The plan is to leverage <a href="https://github.com/substack/dotc">dotc</a> and <a href="http://inotool.org">ino</a> as a starting point. ecfio will wrap these two tools (and maybe others) to streamline project creation and development.</p>
+
+          <p>Next, will be moving a few of the core modules from the arduino IDE into dotc modules so they are tracked in their own repos and able to be updated outside of updating the IDE. This will be a test of the dotc system and whether this is truly feasible. Along with the moves into their own modules, this will be the start of documenting exisiting modules.</p>
+
+          <h3>Goal</h3>
+          <p>The eventual goal will be to have an ecosystem of modules, built on open source tools, that have documentation and are easily available.</p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Usage</h2>
+          <code>ecfio init</code>
+          <p>Initializes your project, creating the base directory structure and files.</p>
+          <code>ecfio build</code>
+          <p>Takes your project, preprocesses it, and then builds the .hex file.</p>
+          <code>ecfio push</code>
+          <p>Takes the .hex file and pushes it to your device</p>
+        </div>
+      </div>
+
 
       <hr>
 
