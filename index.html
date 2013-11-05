@@ -30,32 +30,47 @@
     <div class="jumbotron">
       <div class="container">
         <h1>ecfio <small>\ EK-fee-oh \</small></h1>
-        <p>A framework of utilities, documentation, and modules that make hobbyist hardware development easier, faster, and generally more fun.</p>
+        <p>A ecosystem of utilities, documentation, and modules that make software development for hobbyist hardware easier, faster, and generally more fun.</p>
       </div>
     </div>
 
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p class="bs-callout bs-callout-info">This is a work in progress, the first iteration of the ecfio commandline tool is not yet available.</p>
+
         </div>
       </div>
       <div class="row">
         <div class="col-lg-8">
           <h2>Description</h2>
-          <h3>Background</h3>
-          <p>Software development for hobbyist hardware has not evolved nearly as much as the hardware itself has in the last few years. Arduino IDE makes it easy for people on any platform to get started with very basic applications, but once you start doing more complex things you are limited to what is already there, or if you feel bold, going through the complex process needed to install headers, code, and libraries on top of the Arduino IDE's files.</p>
+          <p>
+            Software development for hobbyist hardware has not progressed nearly as much as the hardware itself has in the last few years.
+            Arduino IDE makes it easy for people on any platform to get started and that is valuable, but advanced use cases are harder.
+            Currently, to use libraries you find on the internet, you are left copy and pasting them into your project, or putting the files into multiple directories in the IDE's directory.
+          </p>
 
-          <h3>Improving the situation</h3>
-          <p>The first aim will be clean up the build systems. The plan is to leverage <a href="https://github.com/substack/dotc">dotc</a> and <a href="http://inotool.org">ino</a> as a starting point. ecfio will wrap these two tools (and maybe others) to streamline project creation and development.</p>
+          <p>
+            The first aim will be clean up the build system.
+            The plan is to leverage <a href="https://github.com/substack/dotc">dotc</a> and <a href="http://inotool.org">ino</a> as a starting point.
+            ecfio will wrap these two utilities (and maybe others) to streamline project creation and development.
+          </p>
 
-          <p>Next, will be moving a few of the core modules from the arduino IDE into dotc modules so they are tracked in their own repos and able to be updated outside of updating the IDE. This will be a test of the dotc system and whether this is truly feasible. Along with the moves into their own modules, this will be the start of documenting exisiting modules.</p>
+          <p>
+            Next, will be move a few of the core modules from the Arduino IDE into dotc modules.
+            They will be tracked in their own repos and able to be updated outside of the IDE.
+            The module repos will include documentation for that module, making it a complete unit.
+            This will be a test of the dotc system and whether this project is truly feasible.
+          </p>
 
-          <h3>Goal</h3>
-          <p>The eventual goal will be to have an ecosystem of modules, built on open source tools, that have documentation and are easily available.</p>
+          <p>
+            The eventual goal will be to have an ecosystem of modules, built on open source tools, that have documentation and are easily installable.
+          </p>
         </div>
         <div class="col-lg-4">
-          <h2>Usage</h2>
+          <h2>Example Commands</h2>
+          <p class="bs-callout bs-callout-info">
+            This is a work in progress.
+          </p>
           <code>ecfio init</code>
           <p>Initializes your project, creating the base directory structure and files.</p>
           <code>ecfio build</code>
@@ -65,11 +80,10 @@
         </div>
       </div>
 
-
       <hr>
 
       <footer>
-        <p><a href="https://github.com/wraithan/ecfio-site">Source</a> on github. Content on this site is in the public domain, code is licensed under <a href="http://wraithan.mit-license.org/">MIT</a></p> 
+        <p>Site <a href="https://github.com/wraithan/ecfio-site">source</a> on github. Content on this site is in the public domain, code is licensed under <a href="http://wraithan.mit-license.org/">MIT</a></p>
       </footer>
     </div>
   </body>
